@@ -8,7 +8,8 @@ This project is **not open-source** under standard OSI definitions. It is a **so
 
 * **Software Code:** Licensed under the [Prosperity Public License 3.0](https://prosperitylicense.com).
 
-### What this means:
+### What this means
+
 * 🟢 **You CAN:** View, download, modify, and distribute this software for personal, educational, or hobby use.
 * 🛑 **You CANNOT:** Use this software or any derivative works for any commercial purposes or financial gain. This restriction is permanent, even if you share your own source code openly.
 
