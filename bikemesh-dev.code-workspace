@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "name": "BikeMesh Plugin",
+      "path": "."
+    },
+    {
+      "name": "Firmware Source",
+      "path": "../../"
+    },
+    {
+      "name": "Firmware Build Environment",
+      "path": "../../../"
+    }
+  ],
+  "settings": {
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.includePath": [
+      "${workspaceFolder:Firmware Core}/**"
+    ],
+    "files.exclude": {
+      "**/.git": true,
+      "**/build": true
+    }
+  }
+}
