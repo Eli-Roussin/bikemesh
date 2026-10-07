@@ -16,13 +16,14 @@
 | Sensing Need | Solution | Notes |
 |---|---|---|
 | Battery voltage (voltage only) | nRF52840 VDD peripheral on VIN pin | Reads 3.0–4.2 V LiPo directly; zero extra parts |
-| Bidirectional current + solar V/I | **TI INA260** I2C power monitor IC | In-series with LiPo + and solar CC out; ≤ 36 V input; single IC covers both channels if wired parallel |
+| Bidirectional current + solar V/I | **TI INA260** on pre-soldered breakout board with Qwiic I2C connector | Pre-soldered module ONLY — no loose chips. In-series with LiPo + and solar CC out; ≤ 36 V input; single IC covers both channels if wired parallel. Search SparkFun, DigiKey, Adafruit for breakout boards only. |
 
 ---
 
 ## Agent 1 — BOM & Component Sourcing
 - Distributors only: **DigiKey, Mouser, Arrow, SparkFun, Rokland**.
 - WisBlock/Qwiic-compatible modules preferred; no custom footprints or adapters unless required.
+- Pre-soldered breakout boards with Qwiic connectors ONLY — never source loose ICs/chips without pre-mounted headers/connectors.
 - Approved manufacturers: RAKwireless, SparkFun, Pololu. No gray-market (AliExpress, eBay, Amazon) or low-quality brands.
 - All passives ≥ **20%** voltage/power derating margin.
 
