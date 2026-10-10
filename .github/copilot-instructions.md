@@ -1,7 +1,3 @@
-<todos title="Todos" rule="Review steps frequently throughout the conversation and DO NOT stop between steps unless they explicitly require it.">
-- No current todos
-</todos>
-
 # BikeMesh — Embedded Systems Copilot Instructions
 
 ## Hardware Target — nRF52840
