@@ -139,11 +139,11 @@ static void fillSamplesWithModeB(uint8_t count) {
         g_vinSamples[i] = VIN_MODE_B_THRESHOLD_MV - 100; // <3.7V
 }
 
-void setUp(void) {
+static void setUp(void) {
     resetStateMachine();
 }
 
-void tearDown(void) {
+static void tearDown(void) {
     // No cleanup needed for this simple test harness
 }
 

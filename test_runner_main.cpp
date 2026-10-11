@@ -1,3 +1,8 @@
+// Unity test counter definitions (declared extern in unity.h)
+int    g_testsRun = 0;
+int    g_testsPassed = 0;
+int    g_testsFailed = 0;
+
 #include <stdio.h>
 #include "test/include/unity.h"
 

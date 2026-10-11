@@ -151,7 +151,7 @@ static bool getInactivityFlag(void) {
      return ((src & (1 << 6)) != 0);
 }
 
-void resetState(void) {
+static void resetState(void) {
     m_initialized = false;
     m_motionActive = false;
     m_tamperActive = TAMPER_NONE;
@@ -162,11 +162,11 @@ void resetState(void) {
     memset(mock_register_data, 0, sizeof(mock_register_data));
 }
 
-void setUp(void) {
+static void setUp(void) {
     resetState();
 }
 
-void tearDown(void) {
+static void tearDown(void) {
      // No cleanup needed for unit test harness
 }
 

@@ -7,9 +7,11 @@
 #include <math.h>
 #include <stdlib.h>
 
-int g_testsRun = 0;
-int g_testsPassed = 0;
-int g_testsFailed = 0;
+// Unity test counters — extern declarations. Actual definitions are in test_runner_main.cpp
+extern int    g_testsRun;
+extern int    g_testsPassed;
+extern int    g_testsFailed;
+
 
 // Helper macro for reporting failures
 #define UNITY_TEST_FAIL(line, msg) fprintf(stderr, "FAIL %s:%d: %s\n", __FILE__, (int)(line), (msg))

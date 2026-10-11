@@ -1,0 +1,5 @@
+# Build artifacts — never commit these
+build.log
+test_runner_out
+*.o
+*.a

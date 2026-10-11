@@ -86,7 +86,7 @@ static uint32_t determineLoggingRate(bool motion) {
     return motion ? 1000U : 60000U; // 1Hz when moving, 1/min when stationary
 }
 
-void resetState(void) {
+static void resetState(void) {
     g_initialized = false;
     g_loggingActive = false;
     g_bufOffset = 0;
@@ -104,11 +104,11 @@ void resetState(void) {
     memset(&mock_last_gga, 0, sizeof(mock_last_gga));
 }
 
-void setUp(void) {
+static void setUp(void) {
     resetState();
 }
 
-void tearDown(void) {
+static void tearDown(void) {
     // No cleanup needed for unit test harness
 }
 

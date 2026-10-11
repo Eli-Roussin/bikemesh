@@ -118,7 +118,7 @@ static void setTestTime(uint32_t ms) {
     s_testTimeMs = ms;
 }
 
-void resetState(void) {
+static void resetState(void) {
     m_beaconState = STATIONARY_IDLE;
     m_stationaryTimerMs = 0U;
     m_lastBroadcastMs = 0U;
@@ -130,11 +130,11 @@ void resetState(void) {
        s_testTimeMs = 0U; // Reset test time counter
 }
 
-void setUp(void) {
+static void setUp(void) {
     resetState();
 }
 
-void tearDown(void) {
+static void tearDown(void) {
       // No cleanup needed for unit test harness
 }
 

@@ -118,7 +118,7 @@ static RideTelemetryPkt_Packed_t buildPacket(NMEA_GPGGA_t *gga, bool motion,
     return pkt;
 }
 
-void resetState(void) {
+static void resetState(void) {
     m_initialized = false;
     m_beaconState = BEACON_IDLE;
     m_lastBroadcastMs = 0;
@@ -131,11 +131,11 @@ void resetState(void) {
     memset(&m_lastPacket, 0, sizeof(m_lastPacket));
 }
 
-void setUp(void) {
+static void setUp(void) {
     resetState();
 }
 
-void tearDown(void) {
+static void tearDown(void) {
       // No cleanup needed for unit test harness
 }
 
