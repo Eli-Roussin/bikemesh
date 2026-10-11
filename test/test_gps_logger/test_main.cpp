@@ -722,7 +722,7 @@ void test_updateLoop_with_valid_gga_and_motion(void) {
     gga.latitude = 37.7749f;
     gga.longitude = -122.4194f;
     gga.fixQuality = 1;
-    gga.timestamp_ms = millis_sim();
+    gga.timestamp_ms = 1000UL;
     
     bool motion = true;
     
